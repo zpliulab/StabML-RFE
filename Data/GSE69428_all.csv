@@ -1,0 +1,30 @@
+Accession,Title,Source name,Sample.type,Tissue
+GSM1701025,patient_1_HGSOC,patient_1_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701026,patient_2_HGSOC,patient_2_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701027,patient_3_HGSOC,patient_3_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701028,patient_4_HGSOC,patient_4_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701029,patient_5_HGSOC,patient_5_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701030,patient_6_HGSOC,patient_6_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701031,patient_7_HGSOC,patient_7_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701032,patient_8_HGSOC,patient_8_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701033,patient_9_HGSOC,patient_9_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701034,patient_10_HGSOC,patient_10_HGSOC,tissue,LCM from cryosection (HGSOC)
+GSM1701035,patient_1_normal_oviduct,patient_1_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701036,patient_2_normal_oviduct,patient_2_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701037,patient_3_normal_oviduct,patient_3_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701038,patient_4_normal_oviduct,patient_4_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701039,patient_5_normal_oviduct,patient_5_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701040,patient_6_normal_oviduct,patient_6_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701041,patient_7_normal_oviduct,patient_7_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701042,patient_8_normal_oviduct,patient_8_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701043,patient_9_normal_oviduct,patient_9_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701044,patient_10_normal_oviduct,patient_10_normal_oviduct,tissue,LCM from cryosection (normal oviduct)
+GSM1701045,"FTSC, rep1",FTSC,cell culture,FTSC
+GSM1701046,"FTSC, rep2",FTSC,cell culture,FTSC
+GSM1701047,"FTSC_IM, rep1",FTSC-IM,cell culture (SV40 LT and hTERT),immortalized FTSC
+GSM1701048,"FTSC_IM, rep2",FTSC-IM,cell culture (SV40 LT and hTERT),immortalized FTSC
+GSM1701049,"FTSC_T, rep1",FTSC-T,"cell culture (c-Myc, SV40 LT and hTERT)",transformed FTSC
+GSM1701050,"FTSC_T, rep2",FTSC-T,"cell culture (c-Myc, SV40 LT and hTERT)",transformed FTSC
+GSM1701051,"Xenograft_FTSC_T, rep1",FTSC-xeno,xenograft,xenograft
+GSM1701052,"Xenograft_FTSC_T, rep2",FTSC-xeno,xenograft,xenograft
+GSM1701053,"Xenograft_FTSC_T, rep3",FTSC-xeno,xenograft,xenograft
