@@ -25,7 +25,7 @@ Li, Lingyu, and Zhi-Ping Liu. "**Identifying robust diagnostic biomarkers of hig
 <!--END_SECTION:news-->
 
 
-## R code for StabFS 
+## R code for StabML-RFE
 The **serial number (1) (2) ... (10)** represents the order in which the program runs in our work.
 <!--START_SECTION:news-->
 * (1) GSE69284_expr.R ---- Processing original data of GSE69284 and get the (scale) data with corresponding labels.
