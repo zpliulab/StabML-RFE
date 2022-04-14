@@ -2,18 +2,18 @@
 
 ![Screenshot](Data/HGSOC.jpg)
 
-In this work, we provide **a stable machine learning-recursive feature elimination method** named **StabML-RFE ** for identifying **robust diagnostic biomarkers** of high-grade serous ovarian cancer (HGSOC) based on gene expression data. The successful identification of HGSOC biomarkers will be beneficial to reduce the risk of ovarian cancer among women for early disease detection. **Obviously, the proposed method of discovering biomarkers for HGSOC can be easily extended for other complex diseases**.
+In this work, we provide **a stable machine learning-recursive feature elimination method** named **StabML-RFE** for identifying **robust diagnostic biomarkers** of high-grade serous ovarian cancer (HGSOC) based on gene expression data. The successful identification of HGSOC biomarkers will be beneficial to reduce the risk of ovarian cancer among women for early disease detection. **Obviously, the proposed method of discovering biomarkers for HGSOC can be easily extended for other complex diseases**.
 
 
 ## StabML-RFE
 <!--START_SECTION:news-->
-* **StabML-RFE **: A method of stable machine learning-recursive feature elimination for identifying robust biomarker from gene expression data. 
+* **StabML-RFE**: A method of stable machine learning-recursive feature elimination for identifying robust biomarker from gene expression data. 
 * If you have any questions about **StabML-RFE **, please directly contact the corresponding author [Prof. Zhi-Ping Liu](https://scholar.google.com/citations?user=zkBXb_kAAAAJ&hl=zh-CN&oi=ao) with the E-mail: zpliu@sdu.edu.cn
 <!--END_SECTION:news-->
 
 
 ## Citation
-Li, Lingyu, and Zhi-Ping Liu. "**Identifying robust diagnostic biomarkers of high-grade serous ovarian cancer by stable machine learning-recursive feature elimination method**." Submit to Journal. 
+Li, Lingyu, and Zhi-Ping Liu. "**Robust biomarker screening from gene expression data by stable machine learning-recursive feature elimination methods**." Submit to Journal. 
 
 
 ## Data
