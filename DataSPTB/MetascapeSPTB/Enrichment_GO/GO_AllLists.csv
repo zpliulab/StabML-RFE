@@ -1,0 +1,13 @@
+Category,CategoryID,GO,Description,PARENT_GO,LogP,Enrichment,Z-score,#TotalGeneInLibrary,#GeneInGO,#GeneInHitList,#GeneInGOAndHitList,%InGO,STDV %InGO,GeneID,Hits,Log(q-value),GeneList
+GO Biological Processes,19,GO:0032787,monocarboxylic acid metabolic process,19_GO:0008152 metabolic process,-3.7,13,6.7,30211,491,19,4,21,9.4,37|5571|8605|8876,ACADVL|PRKAG1|PLA2G4C|VNN1,0,MyList
+GO Biological Processes,19,GO:0016050,vesicle organization,19_GO:0009987 cellular process,-3.2,17,6.8,30211,279,19,3,16,8.4,6844|54874|415117,VAMP2|FNBP1L|STX19,0,MyList
+GO Biological Processes,19,GO:0006631,fatty acid metabolic process,19_GO:0008152 metabolic process,-3,15,6.2,30211,325,19,3,16,8.4,37|5571|8605,ACADVL|PRKAG1|PLA2G4C,0,MyList
+GO Biological Processes,19,GO:0061024,membrane organization,19_GO:0009987 cellular process,-2.9,8.2,5.1,30211,774,19,4,21,9.4,5339|6844|54874|415117,PLEC|VAMP2|FNBP1L|STX19,0,MyList
+GO Biological Processes,19,GO:0098916,anterograde trans-synaptic signaling,19_GO:0023052 signaling,-2.7,12,5.6,30211,396,19,3,16,8.4,6560|6844|415117,SLC12A4|VAMP2|STX19,0,MyList
+GO Biological Processes,19,GO:0007268,chemical synaptic transmission,19_GO:0023052 signaling,-2.7,12,5.6,30211,396,19,3,16,8.4,6560|6844|415117,SLC12A4|VAMP2|STX19,0,MyList
+GO Biological Processes,19,GO:0099537,trans-synaptic signaling,19_GO:0023052 signaling,-2.7,12,5.4,30211,413,19,3,16,8.4,6560|6844|415117,SLC12A4|VAMP2|STX19,0,MyList
+GO Biological Processes,19,GO:0099536,synaptic signaling,19_GO:0023052 signaling,-2.6,11,5.2,30211,442,19,3,16,8.4,6560|6844|415117,SLC12A4|VAMP2|STX19,0,MyList
+GO Biological Processes,19,GO:0010256,endomembrane system organization,19_GO:0009987 cellular process,-2.4,9.5,4.8,30211,504,19,3,16,8.4,5339|54874|415117,PLEC|FNBP1L|STX19,0,MyList
+Reactome Gene Sets,6,R-HSA-199991,Membrane Trafficking,,-2.2,7.5,4.2,30211,634,19,3,16,8.4,5571|6844|54874,PRKAG1|VAMP2|FNBP1L,0,MyList
+GO Biological Processes,19,GO:0045859,regulation of protein kinase activity,19_GO:0008152 metabolic process,-2.1,7.4,4.1,30211,645,19,3,16,8.4,5339|5571|129138,PLEC|PRKAG1|ANKRD54,0,MyList
+Reactome Gene Sets,6,R-HSA-5653656,Vesicle-mediated transport,,-2.1,7.1,4,30211,673,19,3,16,8.4,5571|6844|54874,PRKAG1|VAMP2|FNBP1L,0,MyList

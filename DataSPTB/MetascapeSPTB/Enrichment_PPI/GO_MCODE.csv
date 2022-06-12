@@ -1,0 +1,3 @@
+Name,Category,CategoryID,GO,Description,PARENT_GO,LogP,Enrichment,Z-score,#TotalGeneInLibrary,#GeneInGO,#GeneInHitList,#GeneInGOAndHitList,%InGO,STDV %InGO,GeneID,Hits,Log(q-value)
+MyList,GO Biological Processes,19,GO:0016050,vesicle organization,19_GO:0009987 cellular process,-4.8,54,13,30211,279,6,3,50,20,6844|54874|415117,VAMP2|FNBP1L|STX19,-0.47
+MyList,GO Biological Processes,19,GO:0061024,membrane organization,19_GO:0009987 cellular process,-3.5,20,7.4,30211,774,6,3,50,20,6844|54874|415117,VAMP2|FNBP1L|STX19,0

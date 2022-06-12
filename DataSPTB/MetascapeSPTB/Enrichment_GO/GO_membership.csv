@@ -1,0 +1,13 @@
+_MEMBER_MyList,_LogP_MyList,GO,Description,_PATTERN_,_RANK_,GiniIndex
+1,-2.7,GO:0007268,chemical synaptic transmission,M1,1,0
+1,-2.6,GO:0099536,synaptic signaling,M1,1,0
+1,-3,GO:0006631,fatty acid metabolic process,M1,1,0
+1,-2.4,GO:0010256,endomembrane system organization,M1,1,0
+1,-3.7,GO:0032787,monocarboxylic acid metabolic process,M1,1,0
+1,-2.2,R-HSA-199991,Membrane Trafficking,M1,1,0
+1,-2.1,GO:0045859,regulation of protein kinase activity,M1,1,0
+1,-3.2,GO:0016050,vesicle organization,M1,1,0
+1,-2.1,R-HSA-5653656,Vesicle-mediated transport,M1,1,0
+1,-2.7,GO:0098916,anterograde trans-synaptic signaling,M1,1,0
+1,-2.9,GO:0061024,membrane organization,M1,1,0
+1,-2.7,GO:0099537,trans-synaptic signaling,M1,1,0
