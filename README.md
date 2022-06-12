@@ -2,45 +2,59 @@
 
 ![Screenshot](Data/HGSOC.jpg)
 
-In this work, we provide **a stable machine learning-recursive feature elimination method** named **StabML-RFE** for identifying **robust diagnostic biomarkers** of high-grade serous ovarian cancer (HGSOC) based on gene expression data. The successful identification of HGSOC biomarkers will be beneficial to reduce the risk of ovarian cancer among women for early disease detection. **Obviously, the proposed method of discovering biomarkers for HGSOC can be easily extended for other complex diseases**.
+In this work, we provide **a stable machine learning-recursive feature elimination method** named **StabML-RFE ** for identifying **robust diagnostic biomarkers** of high-grade serous ovarian cancer (HGSOC) based on gene expression data. The successful identification of HGSOC biomarkers will be beneficial to reduce the risk of ovarian cancer among women for early disease detection. **Obviously, the proposed method of discovering biomarkers for HGSOC can be easily extended for other complex diseases**.
 
 
 ## StabML-RFE
 <!--START_SECTION:news-->
-* **StabML-RFE**: A method of stable machine learning-recursive feature elimination for identifying robust biomarker from gene expression data. 
+* **StabML-RFE **: A method of stable machine learning-recursive feature elimination for identifying robust biomarker from gene expression data. 
 * If you have any questions about **StabML-RFE **, please directly contact the corresponding author [Prof. Zhi-Ping Liu](https://scholar.google.com/citations?user=zkBXb_kAAAAJ&hl=zh-CN&oi=ao) with the E-mail: zpliu@sdu.edu.cn
 <!--END_SECTION:news-->
 
 
 ## Citation
-Li, Lingyu, and Zhi-Ping Liu. "**Robust biomarker screening from gene expression data by stable machine learning-recursive feature elimination methods**." Submit to Journal. 
+Li, Lingyu, and Zhi-Ping Liu. "**Identifying robust diagnostic biomarkers of high-grade serous ovarian cancer by stable machine learning-recursive feature elimination method**." Submit to [COMPUTATIONAL BIOLOGY AND CHEMISTRY](http://www.elsevier.com/wps/find/journaldescription.cws_home/627320/description#description). 
 
 
 ## Data
 <!--START_SECTION:news-->
-* In the **Datanew**, **DataPythonTop** and **DataPythonTop20** files, we only give some necessary files by each R or Python program. 
+* In the **Data**, **DataSPTB** and **DataHGSOC** files, we only give some necessary files by each R or Python program. 
 * Some of these input files only give the first few lines, but this does not affect the results of the work (**StabML-RFE**).
-* File **Datanew**, it contains most files that the codes need to input or the codes output.
-* Files **DataPythonTop** and **DataPythonTop20**, they respectively contains the eight ranking lists obtained from eight ML-RFE methods and the optimal feature sets induced by the top-ranked 20 features of each method.
+* For convenience, we have used the new filename, but the R code still has the original filename. In other words, File **DataSPTB** is the file name  **DataTcgaGtex** in code**RforSPTB** , File **DataHGSOC** is the file name  **DataGEOTogather** in code**RforHGSOC**.
+* Files **DataPython** and **DataPythonK**, they respectively contains the eight ranking lists obtained from eight ML-RFE methods and the optimal feature sets induced by the top-ranked  features of each method.
 <!--END_SECTION:news-->
 
 
-## R code for StabML-RFE
+## R code for StabML-RFE  --  RforSPTB
+The **serial number (1) (2) ... (11)** represents the order in which the program runs in our work.
+<!--START_SECTION:news-->
+* (1) DE_split_sptb.R  --  Divide the dataset and label the difference genes.
+* (2) rfeSPTB.py ----  Feature selection using AB-RFE, DT-RFE, GBDT-RFE, NB-RFE, RF-RFE, SVM-RFE and XGB-RFE method.
+* (3) rfe_nnetSPTB.R  --  Feature selection using NNET-RFE method.
+* (4) RFE_ROC_SPTB.R  --  Firstly, Parameter alpha=0.04, select top-ranked alpha genes as optimal feature subset for each method, and save them in file DataPythonK. Secondly, perform internal validation, applying SVM classifier with linear baseline function to get the classification results, and save them in the file. Finally, screening by AUC value under parameter tau=0.75 for eight feature subsets, save them in the file DataPythonKauc.
+* (5) stability_sptb4.R  --  Calculus stability index of the combinations of four subsets whose AUC>tau. Then select the features with Fren>k as Robust biomarkers, and save them in file fren4.csv.
+* (6) feature_selectCompareSPTB.R  --  Perform internal and external validation. For the independent validation, use the file GSE73685new_bio. The feature data of GSE73685 is saved in the file DataCompare\\DataGEO, while the feature data of GSE59491 is saved in the file DataCompare\\DataTCGA. Last, investigate the classification AUC using SVM classifier.
+* (7) Functional enrichment analysis using Metascape online database, the results can be found in the file MetascapeSPTB\\Enrichment_GO\\GO_AllLists.csv.
+* (8) feature_studyKSPTB.R  --  Extract the biomarker genes from the discovery data for next DE analysis.  
+* (9) DE_SPTB.R  --  Explore the differential expression situation of the selected biomarker genes.
+* (10) Robust_SPTB.R  --  Calculate the robustness of 24 biomarkers selected by StabML-RFE method and other three ML-RFE methods. Especially, these three methods are contributing to the stable feature aggregation process.
+* (11) PRSBox.R  --  Investigate the significance of the PRS index.
+<!--END_SECTION:news-->
+
+
+## R code for StabML-RFE  --  RforHGSOC
 The **serial number (1) (2) ... (10)** represents the order in which the program runs in our work.
 <!--START_SECTION:news-->
-* (1) GSE69284_expr.R ---- Processing original data of GSE69284 and get the (scale) data with corresponding labels.
-* (2) DE_gene.R ---- Identify the differentially expressed genes (DEGs) on a dataset, find candidates with adjusted adj.P.Val < 0.05 and |logFC|>1.5, and get the DEGs’s expression data file “matrix_DE” used to input Python codes to conduct ML-RFE progression.
-* (3) rfeExample.py ---- Perform the seven ML-RFE methods with the random seed p = 2022, which is sued to keep the same result in each run. Thus the ranking files of all DE features are obtain (ranklist_SVMrfe.txt, ranklist_ABrfe, ranklist_RFrfe.txt, ranklist_DTrfe.txt, ranklist_GBDTrfe.txt, ranklist_XGBrfe.txt, ranklist_NBrfe.txt). 
-* (4) rfe_nnet.R ---- Conduct NNET-RFE method and obtain “ranklist_NNETrfe.txt”.
-* (5) RFE_ROC_newTest.R ---- Seleted the top-ranked 20 features of each list obtained from eight ML-RFE methods, take them as the optimal feature subsets, and test the classification results of each optimal feature subsets.
-* (6) stability_HGSOCpythonTop.R ---- Calculate the stability index of all combinations for quantifying the similarity of two or more feature sets, and identify the potential biomarkers. It proves the stability/robustness of the identified biomarkers selected by our subset identification strategy of different machine learning and feature selection methods.
-* (7) feature_study.R -- Extract the expression value of the biomarkers from the discovery dataset. 
-* (8) cornew.R  --  It mainly make internal validation including the differential analysis (Plot the differential barplot and label the significance of the identified biomarkers on the discovery dataset), heatmap plot, the correlation of the biomarkers and the up/down regulation, and the network of 18 biomarkers with correlation larger than 0.8.
-* (9) cluster_HGSOC.R  --  Make GO and pathway functional enrichment analysis of the identified biomarkers.
-* (10) feature_selectnew.R ---- Extract data from independent dataset and origina discovery dataset based on identified biomarker.
-* (11) class_featurenew.R " ---- Verify the identified biomarkers on 5 independent dataset and obtain the true label and predict label.
-* (12) ROC_plotnew.R" ---- Plot ROC curves and AUC value of 5 independent validation datasets  and plot ROC curves.
-* (13) DEplot_add.R ---- Show the classification performances of the external validation in the form of bar plots.
+* (1) GSE69428_expr.R  --  Processing original data of GSE69284 and getting the (scale) data with corresponding labels. 
+* (2) GSE69428_27651.R  --  Integrate the two datasets, make differential expression analysis, and split the new dataset into training and test datasets, the output file “matrix_DEtrain.txt” is used to input Python codes to conduct ML-RFE progression.    
+* (3) rfeGEOtogather.py  --  Perform the seven ML-RFE methods with the random seed p = 2022, which is sued to keep the same result in each run. Thus the ranking files of all DE features are obtained (ranklist_SVMrfe.txt, ranklist_ABrfe, ranklist_RFrfe.txt, ranklist_DTrfe.txt, ranklist_GBDTrfe.txt, ranklist_XGBrfe.txt, ranklist_NBrfe.txt). 
+* (4) rfe_nnetDEOtogather.R  --  Conduct NNET-RFE method and obtain “ranklist_NNETrfe.txt”.
+* (5) RFE_ROC_GEOtogather.R  --  Selected the top-ranked 20 features of each list obtained from eight ML-RFE methods, take them as the optimal feature subsets, and test the classification results of each optimal feature subsets.
+* (6) stability_GEOtogather6.R  --  Calculate the stability index of all combinations for quantifying the similarity of two or more feature sets, and identify the potential biomarkers. It proves the stability/robustness of the identified biomarkers selected by our subset identification strategy of different machine learning and feature selection methods.
+* (7) feature_selectGEOCompareKall.R  --  Extract the expression value of the biomarkers from the external independent validation dataset. 
+* (8) feature_studyGEOtogather.R  --  Extract the expression value of the biomarkers from the discovery dataset. 
+* (9) corGEOtogather.R  --  It mainly makes internal validation including the differential analysis (Plot the differential box-plot and label the significance of the identified biomarkers on the discovery dataset), heatmap plot, the correlation of the biomarkers and the up/down-regulation, and the network of 18 biomarkers with correlation larger than 0.6.
+* (10) Robust_HGSOC.R  --  calculate the robustness of HGSOC biomarkers selected by StabML-RFE method and other five alternative ML-RFE methods.
 <!--END_SECTION:news-->
 
 
