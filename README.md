@@ -13,7 +13,8 @@ In this work, we provide **a stable machine learning-recursive feature eliminati
 
 
 ## Citation
-Li, Lingyu, et al. "**Robust biomarker screening from gene expression data by stable machine learning-recursive feature elimination methods**." Accepted by [COMPUTATIONAL BIOLOGY AND CHEMISTRY](http://www.elsevier.com/wps/find/journaldescription.cws_home/627320/description#description). 
+Li, Lingyu, Ching W K, Liu Z P. "**Robust biomarker screening from gene expression data by stable machine learning-recursive feature elimination methods**. [COMPUTATIONAL BIOLOGY AND CHEMISTRY](http://www.elsevier.com/wps/find/journaldescription.cws_home/627320/description#description), 2022, 100: 107747. [StabML-RFE
+g paper website](https://www.sciencedirect.com/science/article/abs/pii/S147692712200127X)
 
 
 ## Data
