@@ -1,4 +1,4 @@
-# [StabML-RFE (stable machine learning-recursive feature elimination method)](https://github.com/zpliulab/StabML-RFE)
+# [StabML-RFE: Robust biomarker screening from gene expression data by stable machine learning-recursive feature elimination methods](https://github.com/zpliulab/StabML-RFE)
 
 ![Screenshot](Data/HGSOC.jpg)
 
